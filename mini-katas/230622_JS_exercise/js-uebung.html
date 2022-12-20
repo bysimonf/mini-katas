@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Übung</title>
+
+	<script>
+		let wochentage = ['montag', 'dienstag', 'mittwoch']
+
+		let beispielObjekt = {
+			name: "alex",
+			lieblingsrestaurant: [
+
+				{
+					name: "mcdonalds",
+					adresse: {
+						ort: "München"
+					}
+				},
+
+				{
+					name: "burger king",
+					adresse: {
+						ort: "München"
+					}
+				},
+
+				{
+					name: "pizza hut",
+					adresse: {
+						ort: "Augsburg"
+					}
+				}
+			]
+		}
+
+		/*function filterAugsburg(restaurant) {
+			console.log(restaurant)
+			if(restaurant.adresse.ort === "Augsburg" ) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}*/
+
+		/** HAUSAUFGABE: SETZE DIE FILTERAUGSBURG FUNKTION ALS ARROWFUNCTION UM **/
+
+		let restaurant = beispielObjekt.lieblingsrestaurant
+		
+		/*filterAugsburg = (restaurant) => {
+			if(restaurant.adresse.ort === "Augsburg" ) {
+				return true
+			}
+			else {
+				return false
+			}
+		}*/
+
+		console.log(restaurant.filter((restaurant) => {
+			if(restaurant.adresse.ort === "Augsburg" ) {
+				return true
+			}
+			else {
+				return false
+			}
+		}))
+
+		/*
+		for(const element in wochentage) {
+			console.log(wochentage[element])
+		}
+
+
+		for(let element of wochentage) {
+			console.log(element)
+		}
+
+		for(let i=0; i <wochentage.length; i++){
+			console.log(wochentage[i])
+		}
+
+		let i = 0
+		while (i < wochentage.length) {
+			console.log(wochentage[i])
+			i++
+		}
+		
+
+		wochentage.forEach(element => {console.log(element)})
+
+	
+
+		
+		beispielObjekt.name2 = "jonas"
+		console.log(beispielObjekt['name2'])
+
+		
+
+		wochentage.push("donnerstag")
+
+
+		function checkMonday(wochentag) {
+			if(wochentag === 'montag') {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		let newArray = wochentage.filter(checkMonday)
+
+		console.log(wochentage.filter(wochentag => wochentag === 'montag'))*/
+		
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
